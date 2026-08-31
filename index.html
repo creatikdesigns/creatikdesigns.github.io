@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- ===============================================
+       CREATIK DESIGNS - HOME PAGE
+
+       यह मुख्य (Home) पेज है। यहां आप:
+       - ब्रांड का परिचय दें
+       - हीरो सेक्शन में मुख्य संदेश डालें
+       - प्रोडक्ट्स को शोकेस करें
+       - न्यूज़लेटर सब्सक्राइब करने के लिए कहें
+
+       🔧 CHANGES करने के लिए इन जगहों को ढूंढें:
+       1. <title> - ब्राउज़र टैब में दिखने वाला नाम
+       2. Meta descriptions - Google में दिखने वाली जानकारी
+       3. og:image - Social media पर शेयर करते समय दिखने वाली image
+       =============================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- यह title पेज का नाम है - Google में भी यही दिखता है -->
+  <title>Creatik Designs — Digital Products, Apps, Software & Icon Packs</title>
+  <!-- यह description Google में search results में दिखता है -->
+  <meta name="description" content="Creatik Designs creates thoughtful Android apps, software, icon packs, and digital experiences that are simple, useful, and beautifully crafted.">
+
+  <!-- Open Graph - जब आप Facebook/Twitter पर link share करते हो -->
+  <meta property="og:title" content="Creatik Designs — Digital Products, Apps, Software & Icon Packs">
+  <meta property="og:description" content="We design useful digital experiences with thoughtful details.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://creatikdesigns.com/">
+  <!-- og:image - Social media पर दिखने वाली image। अपनी image का URL यहां रखें -->
+  <meta property="og:image" content="https://creatikdesigns.com/og-image.png">
+
+  <!-- Twitter - जब आप Twitter पर link share करते हो -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Creatik Designs — Digital Products, Apps, Software & Icon Packs">
+  <meta name="twitter:description" content="We design useful digital experiences with thoughtful details.">
+
+  <!-- Canonical - Google को बताता है कि यह मुख्य पेज है -->
+  <link rel="canonical" href="https://creatikdesigns.com/">
+
+  <!-- Stylesheets - CSS files जो पेज को styling देती हैं -->
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Favicon - ब्राउज़र टैब में दिखने वाला छोटा icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='55' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ===============================================
+       NAVIGATION BAR (नेविगेशन बार)
+
+       ⚠️ CROSS-REFERENCE - YAHAN CHANGE KIYA TO YE FILES BHI DEKHO:
+       - products.html (lines 16-28): Same navbar hai
+       - about.html (lines 16-28): Same navbar hai
+       - support.html (lines 16-28): Same navbar hai
+       - icon-packs.html (lines 16-28): Same navbar hai
+       - miniblue.html (lines 16-28): Same navbar hai
+
+       YE SAB FILES EK HI NAVBAR SHARE KARTI HAI!
+       Agar menu item add/remove karo to SAARI FILES me karo.
+
+       🔧 LOGO:
+       - <div class="logo-mark">C</div> - यह 'C' अक्षर है
+       - Creatik Designs - यह company का नाम है
+       - ⚠️ SAARI FILES me same logo hona chahiye
+
+       🔧 MENU LINKS (मेनू लिंक):
+       - हर <li><a> एक menu item है
+       - href="page.html" - यह link का address है
+       - Text बदलने के लिए <a> tags के बीच का text बदलें
+       - ⚠️ SAARI HTML FILES me same menu structure rakho
+
+       ⚠️ DON'T CHANGE (मत छुएं):
+       - Theme toggle button - यह dark/light mode switch करता है
+       - Mobile menu toggle - यह mobile पर menu open करता है
+       - CSS classes - ये styling के लिए हैं
+       =============================================== -->
+  <nav class="navbar">
+    <div class="container">
+      <!-- LOGO और BRAND NAME (यहां अपना logo/name बदलें) -->
+      <!-- ⚠️ YE LOGO SAARI HTML FILES ME SAME HAI -->
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-mark">C</div> <!-- 🔧 Logo अक्षर यहां बदलें -->
+        Creatik Designs <!-- 🔧 Company का नाम यहां बदलें -->
+      </a>
+
+      <!-- DESKTOP MENU (डेस्कटॉप मेनू) -->
+      <!-- ⚠️ YE MENU SAARI HTML FILES ME SAME HAI -->
+      <ul class="navbar-nav">
+        <!-- 🔧 हर menu item यहां है। Text बदल सकते हो, href बदल सकते हो -->
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="icon-packs.html">Icon Packs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+
+      <!-- ⚠️ DON'T TOUCH - Theme और Mobile Menu Buttons (मत छुएं) -->
+      <div class="navbar-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="icon sun-icon">☀️</span>
+          <span class="icon moon-icon">🌙</span>
+        </button>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Open menu">
+          <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===============================================
+       MOBILE MENU (मोबाइल मेनू)
+
+       ⚠️ CROSS-REFERENCE - AGAR DESKTOP MENU (upar) BADLA:
+       TO YE MENU BHI BADLEIN Kyonki dono same links honi chahiye!
+
+       FILES JAHAN NAVBAR HAI:
+       - products.html
+       - about.html
+       - support.html
+       - icon-packs.html
+       - miniblue.html
+
+       ⚠️ DON'T CHANGE THIS SECTION (यह सेक्शन मत छुएं)
+       यह automatically काम करता है JavaScript से।
+
+       अगर menu items बदलने हैं तो ऊपर के Desktop Menu
+       में बदलें, और यहां भी same changes करें।
+       =============================================== -->
+  <div id="mobile-overlay" class="mobile-overlay"></div>
+  <div id="mobile-menu" class="mobile-menu">
+    <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <!-- 🔧 Mobile menu items - Desktop menu के साथ match होने चाहिए -->
+    <ul class="mobile-menu-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="icon-packs.html">Icon Packs</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </div>
+
+  <!-- ===============================================
+       HERO SECTION (मुख्य पहला सेक्शन)
+
+       यह पेज का सबसे महत्वपूर्ण हिस्सा है।
+       जब कोई पहली बार आपकी website खोलता है तो यह दिखता है।
+
+       🔧 WHAT TO CHANGE (क्या बदलें):
+       1. Main Heading (मुख्य शीर्षक) - बड़ा text
+       2. Description (विवरण) - छोटा paragraph
+       3. Button Text और Links
+       4. Floating Icons (तैरते हुए icons)
+
+       💡 BRAND MARK:
+       - <div class="brand-mark"> में logo है
+       - SVG में 'C' अक्षर बदल सकते हो
+
+       ⚠️ DON'T CHANGE:
+       - CSS classes
+       - SVG structure (सिर्फ text बदलें)
+       - Container divs
+       =============================================== -->
+  <section class="hero">
+    <!-- Floating Icons Background (पीछे तैरते हुए icons) -->
+    <!-- 🔧 इन emojis को बदल सकते हो अपने brand के अनुसार -->
+    <div class="hero-visual-container">
+      <div class="floating-icon">📱</div> <!-- 🔧 Icon 1 -->
+      <div class="floating-icon">⚡</div> <!-- 🔧 Icon 2 -->
+      <div class="floating-icon">🎨</div> <!-- 🔧 Icon 3 -->
+      <div class="floating-icon">✨</div> <!-- 🔧 Icon 4 -->
+      <div class="floating-icon">💎</div> <!-- 🔧 Icon 5 -->
+      <div class="floating-icon">🎯</div> <!-- 🔧 Icon 6 -->
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <!-- BRAND MARK (Logo) -->
+        <!-- 🔧 नीचे SVG में 'C' को अपना logo अक्षर से बदलें -->
+        <div class="brand-mark">
+          <div class="glow"></div>
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#3b82f6"/>
+                <stop offset="50%" stop-color="#8b5cf6"/>
+                <stop offset="100%" stop-color="#06b6d4"/>
+              </linearGradient>
+            </defs>
+            <rect width="120" height="120" rx="30" fill="url(#heroGrad)"/>
+            <!-- 🔧 यहां 'C' को बदलें अपने logo अक्षर से -->
+            <text x="60" y="80" font-family="'Plus Jakarta Sans', Arial" font-size="65" font-weight="800" fill="white" text-anchor="middle">C</text>
+          </svg>
+        </div>
+
+        <!-- MAIN HEADING (मुख्य शीर्षक) -->
+        <!-- 🔧 यह बड़ा heading है - अपना main message यहां लिखें -->
+        <h1 class="hero-title">
+          Digital products,<br>
+          <span class="gradient-text">designed with intent.</span> <!-- 🔧 यह colorful text है -->
+        </h1>
+
+        <!-- DESCRIPTION (विवरण) -->
+        <!-- 🔧 अपने business के बारे में छोटा विवरण यहां लिखें -->
+        <p class="hero-description">
+          Creatik Designs builds thoughtful Android apps, software, icon packs, and digital experiences that are simple, useful, and beautifully crafted.
+        </p>
+
+        <!-- CTA BUTTONS (Call-to-Action बटन्स) -->
+        <!-- 🔧 इन buttons के text और links बदल सकते हो -->
+        <div class="hero-actions">
+          <!-- Primary Button (मुख्य बटन) -->
+          <a href="products.html" class="btn btn-primary magnetic">
+            Explore Products <!-- 🔧 Button text यहां बदलें -->
+            <span class="arrow">→</span>
+          </a>
+          <!-- Secondary Button (दूसरा बटन) -->
+          <a href="#discover" class="btn btn-secondary magnetic">
+            Discover Creatik <!-- 🔧 Button text यहां बदलें -->
+            <span class="arrow">↓</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================================
+       BRAND INTRO SECTION (ब्रांड परिचय सेक्शन)
+
+       यहां आप अपने products की categories दिखाते हो।
+
+       🔧 WHAT TO CHANGE:
+       1. Section Heading और Description
+       2. हर category card का content
+       3. Icons (emojis)
+       4. Links
+
+       💡 हर CARD में:
+       - Icon (emoji)
+       - Heading (शीर्षक)
+       - Description (विवरण)
+       - Status/Link
+
+       ⚠️ DON'T CHANGE:
+       - Grid structure
+       - CSS classes
+       =============================================== -->
+  <section id="discover">
+    <div class="container">
+      <!-- Section Header (सेक्शन हेडर) -->
+      <div class="section-header reveal">
+        <!-- 🔧 Label बदल सकते हो -->
+        <span class="section-label">What We Build</span>
+        <!-- 🔧 Main title यहां बदलें -->
+        <h2 class="section-title">We build things worth using.</h2>
+        <!-- 🔧 Description यहां बदलें -->
+        <p class="section-description">
+          Every product from Creatik Designs is designed around useful experiences and thoughtful interaction.
+        </p>
+      </div>
+
+      <!-- Products Categories Grid -->
+      <div class="bento-grid reveal-stagger">
+
+        <!-- CATEGORY CARD 1: Android Apps -->
+        <!-- 🔧 इस पूरे card को customize करें -->
+        <div class="card bento-item category-card">
+          <div class="card-icon">📱</div> <!-- 🔧 Icon बदलें -->
+          <h3>Android Apps</h3> <!-- 🔧 Category नाम बदलें -->
+          <!-- 🔧 Description बदलें -->
+          <p>Focused apps designed around useful experiences and thoughtful interaction. Each app solves a specific problem with elegant simplicity.</p>
+          <!-- 🔧 Status text बदलें -->
+          <span class="arrow">
+            Coming Soon
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
+
+        <!-- CATEGORY CARD 2: Software & Tools -->
+        <!-- 🔧 इस card को भी customize करें -->
+        <div class="card bento-item category-card">
+          <div class="card-icon">⚡</div> <!-- 🔧 Icon बदलें -->
+          <h3>Software & Tools</h3> <!-- 🔧 Category नाम बदलें -->
+          <!-- 🔧 Description बदलें -->
+          <p>Practical digital tools built to solve real problems simply.</p>
+          <!-- 🔧 Status text बदलें -->
+          <span class="arrow">
+            In Development
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
+
+        <!-- CATEGORY CARD 3: Icon Packs (Clickable Link) -->
+        <!-- 🔧 यह clickable card है - href बदल सकते हो -->
+        <a href="icon-packs.html" class="card bento-item category-card" style="text-decoration: none; color: inherit;">
+          <div class="card-icon">🎨</div> <!-- 🔧 Icon बदलें -->
+          <h3>Icon Packs</h3> <!-- 🔧 Category नाम बदलें -->
+          <!-- 🔧 Description बदलें -->
+          <p>Carefully designed icon systems created for consistency, personality, and customization. Transform your Android setup.</p>
+          <!-- 🔧 Link text बदलें -->
+          <span class="arrow">
+            Explore Icon Packs
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Selected Products</h2>
+        <p class="section-description">
+          A growing collection of apps, tools, and digital products from Creatik Designs.
+        </p>
+      </div>
+
+      <div class="grid grid-2 reveal-stagger">
+        <!-- MiniBlue -->
+        <div class="product-card">
+          <div class="product-card-image">
+            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);">
+              <div style="text-align: center; color: white;">
+                <div style="font-size: 4rem; margin-bottom: 0.5rem;">🔵</div>
+                <div style="font-family: 'Plus Jakarta Sans'; font-weight: 700; font-size: 1.5rem;">MiniBlue</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card-content">
+            <span class="product-card-category">Icon Pack</span>
+            <h3 class="product-card-title">MiniBlue</h3>
+            <p class="product-card-description">
+              A minimal blue icon pack with 1550+ carefully crafted icons designed for a clean and consistent Android setup.
+            </p>
+            <div class="product-card-footer">
+              <span class="badge badge-success">Available</span>
+              <a href="miniblue.html" class="btn btn-primary magnetic">
+                Explore
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Product Placeholder -->
+        <div class="product-card">
+          <div class="product-card-image">
+            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--surface-2);">
+              <div style="text-align: center; opacity: 0.5;">
+                <div style="font-size: 4rem; margin-bottom: 0.5rem;">✨</div>
+                <div style="font-family: 'Plus Jakarta Sans'; font-weight: 700; font-size: 1.25rem;">Something New</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card-content">
+            <span class="product-card-category">Android App</span>
+            <h3 class="product-card-title">New Digital Experience</h3>
+            <p class="product-card-description">
+              A new digital experience is taking shape. Thoughtfully designed, carefully crafted. Coming soon.
+            </p>
+            <div class="product-card-footer">
+              <span class="badge">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-xl reveal">
+        <a href="products.html" class="btn btn-secondary magnetic">
+          View All Products
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MiniBlue Featured Section -->
+  <section class="reveal" style="background: var(--gradient-mesh); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label badge-primary">Featured Product</span>
+        <h2 class="section-title">Meet MiniBlue.</h2>
+        <p class="section-description">
+          A minimal blue icon pack designed for a clean and consistent Android setup.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4xl); align-items: center;">
+        <div class="device-mockup" style="order: 2;">
+          <div style="width: 100%; max-width: 320px; margin: 0 auto; aspect-ratio: 9/19; background: linear-gradient(135deg, #1e3a8a, #3b82f6, #06b6d4); border-radius: 2.5rem; padding: 1rem; box-shadow: var(--shadow-2xl); position: relative;">
+            <div style="position: absolute; inset: 0; border-radius: 2.5rem; background: var(--gradient-text); opacity: 0.1;"></div>
+            <div style="width: 100%; height: 100%; background: rgba(10, 14, 26, 0.4); border-radius: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; padding: var(--space-lg); backdrop-filter: blur(10px);">
+              <div style="font-size: 3rem; margin-bottom: var(--space-md);">🔵</div>
+              <div style="font-family: 'Plus Jakarta Sans'; font-weight: 700; font-size: 1.25rem; margin-bottom: var(--space-xs);">MiniBlue</div>
+              <div style="font-size: 0.875rem; opacity: 0.8;">Home Screen Preview</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="order: 1;">
+          <h3 style="margin-bottom: var(--space-lg); font-size: 1.75rem;">1550+ carefully crafted icons</h3>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-xl); font-size: 1.125rem;">
+            Each icon is designed with consistency, precision, and attention to detail. A complete system for your Android setup.
+          </p>
+
+          <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: var(--space-md); margin-bottom: var(--space-xl);">
+            <div class="card" style="padding: var(--space-lg); background: var(--surface);">
+              <div style="font-size: 1.5rem; margin-bottom: var(--space-sm);">🎯</div>
+              <h4 style="font-size: 1rem; margin-bottom: var(--space-xs);">1550+ Icons</h4>
+              <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Comprehensive coverage</p>
+            </div>
+
+            <div class="card" style="padding: var(--space-lg); background: var(--surface);">
+              <div style="font-size: 1.5rem; margin-bottom: var(--space-sm);">🔄</div>
+              <h4 style="font-size: 1rem; margin-bottom: var(--space-xs);">Regular Updates</h4>
+              <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Continuously growing</p>
+            </div>
+
+            <div class="card" style="padding: var(--space-lg); background: var(--surface);">
+              <div style="font-size: 1.5rem; margin-bottom: var(--space-sm);">💬</div>
+              <h4 style="font-size: 1rem; margin-bottom: var(--space-xs);">Icon Requests</h4>
+              <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Request what you need</p>
+            </div>
+
+            <div class="card" style="padding: var(--space-lg); background: var(--surface);">
+              <div style="font-size: 1.5rem; margin-bottom: var(--space-sm);">🚀</div>
+              <h4 style="font-size: 1rem; margin-bottom: var(--space-xs);">Launcher Support</h4>
+              <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Works with popular launchers</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+            <a href="miniblue.html" class="btn btn-primary magnetic">
+              Explore MiniBlue
+              <span class="arrow">→</span>
+            </a>
+            <a href="#" class="btn btn-secondary magnetic">
+              Get on Google Play
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Philosophy Section -->
+  <section>
+    <div class="container text-center">
+      <div class="section-header reveal">
+        <span class="section-label">Philosophy</span>
+        <h2 class="section-title">Designed with intent.</h2>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-3xl);">
+        <div class="reveal">
+          <h3 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: var(--space-md);">
+            <span class="gradient-text">Simple, not empty.</span>
+          </h3>
+          <p style="font-size: 1.125rem;">Every element serves a purpose. We remove until removing more would break the experience.</p>
+        </div>
+
+        <div class="reveal">
+          <h3 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: var(--space-md);">
+            <span class="gradient-text">Minimal, not ordinary.</span>
+          </h3>
+          <p style="font-size: 1.125rem;">Restraint doesn't mean lack of character. Simplicity is the ultimate sophistication.</p>
+        </div>
+
+        <div class="reveal">
+          <h3 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: var(--space-md);">
+            <span class="gradient-text">Useful, not complicated.</span>
+          </h3>
+          <p style="font-size: 1.125rem;">Great experiences feel effortless. The best technology disappears.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================================
+       NEWSLETTER SECTION (न्यूज़लेटर सब्सक्रिप्शन)
+
+       ⚠️ CROSS-REFERENCE - YEH NEWSLETTER BHI YAHAN HAI:
+       - products.html (lines 214-229): Same newsletter section
+       - icon-packs.html: Alag version hai
+       - miniblue.html: Alag version hai
+
+       Ye tab similar dikhta hai but text alag hota hai.
+       Agar overall look same rakhna ho to SAARI files me
+       same heading/description use karein.
+
+       यहां visitors अपना email डालकर subscribe कर सकते हैं।
+
+       🔧 WHAT TO CHANGE:
+       1. Heading और description text
+       2. Email input placeholder
+       3. Button text
+       4. Form action (जहां email भेजना है)
+
+       📧 EMAIL SETUP:
+       - अभी form सिर्फ alert दिखाता है
+       - Real email service के लिए action में API endpoint डालें
+       - या Mailchimp/ConvertKit जैसी service use करें
+       - ⚠️ AGAR MAILCHIMP USE KARO TO products.html me bhi
+         same form action dena padega
+
+       ⚠️ DON'T CHANGE:
+       - Form structure
+       - Input/button styling classes
+       =============================================== -->
+  <section class="reveal">
+    <div class="container text-center">
+      <div class="card" style="padding: var(--space-4xl); max-width: 700px; margin: 0 auto; background: var(--gradient-mesh); border: 1px solid var(--border);">
+        <!-- 🔧 Main heading बदलें -->
+        <h2 style="margin-bottom: var(--space-md);">Stay in the loop</h2>
+        <!-- 🔧 Description text बदलें -->
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-xl); font-size: 1.125rem;">
+          Get notified when we launch new products, release updates, or share something interesting.
+        </p>
+        <!-- NEWSLETTER FORM -->
+        <!-- 🔧 onsubmit में अपना email handling code डालें -->
+        <form style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;" onsubmit="event.preventDefault(); alert('Thank you! We\'ll keep you updated.');">
+          <!-- 🔧 Email input placeholder बदल सकते हो -->
+          <input type="email" placeholder="your@email.com" required style="
+            flex: 1;
+            min-width: 250px;
+            max-width: 400px;
+            padding: var(--space-md) var(--space-lg);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            color: var(--text);
+            font-size: 1rem;
+            outline: none;
+            transition: all var(--transition-base);
+          ">
+          <!-- 🔧 Button text बदलें -->
+          <button type="submit" class="btn btn-primary magnetic">
+            Subscribe
+            <span class="arrow">→</span>
+          </button>
+        </form>
+        <!-- 🔧 Privacy note बदल सकते हो -->
+        <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: var(--space-md);">
+          No spam, ever. Unsubscribe anytime.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================================
+       FOOTER (फुटर - पेज का आखिरी हिस्सा)
+
+       ⚠️ CROSS-REFERENCE - FOOTER SAARI FILES ME SAME HAI!
+       - products.html: Same footer structure
+       - about.html: Same footer
+       - support.html: Same footer
+       - icon-packs.html: Same footer
+       - miniblue.html: Same footer
+
+       AGAR FOOTER BADLA TO INME SE HAR EK ME BADLE.
+
+       Ye section सबके नीचे दिखता है।
+       इसमें brand info, links, और copyright है।
+
+       🔧 WHAT TO CHANGE:
+       1. Company name और tagline
+       2. Footer links (हर column में)
+       3. Copyright text
+       4. Social media links (अगर add करना हो)
+
+       💡 FOOTER STRUCTURE:
+       - footer-brand: Company का नाम और description
+       - footer-links: हर column एक category है
+       - footer-bottom: Copyright notice
+
+       🔧 LINKS UPDATE करने के लिए:
+       - हर <a href="..."> का href और text बदल सकते हो
+       - नए links add कर सकते हो
+
+       ⚠️ DON'T CHANGE:
+       - Grid structure (columns automatic adjust होते हैं)
+       - CSS classes
+       =============================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <!-- BRAND SECTION (कंपनी का नाम और विवरण) -->
+        <div class="footer-brand">
+          <h3>
+            <!-- 🔧 Logo mark और company name बदलें -->
+            <div class="logo-mark" style="width: 32px; height: 32px; font-size: 1rem;">C</div>
+            Creatik Designs
+          </h3>
+          <!-- 🔧 Company tagline/description बदलें -->
+          <p>Digital products, designed with intent. Thoughtfully crafted experiences for Android and beyond.</p>
+          <!-- 🔧 Contact/Social buttons यहां add करें -->
+          <div style="display: flex; gap: var(--space-sm); margin-top: var(--space-md);">
+            <a href="support.html" class="btn btn-ghost" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Get in Touch</a>
+          </div>
+        </div>
+
+        <!-- PRODUCTS COLUMN (प्रोडक्ट्स के links) -->
+        <div class="footer-links">
+          <h4>Products</h4> <!-- 🔧 Column heading बदल सकते हो -->
+          <ul>
+            <!-- 🔧 हर link को बदल/add/remove कर सकते हो -->
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="icon-packs.html">Icon Packs</a></li>
+            <li><a href="miniblue.html">MiniBlue</a></li>
+          </ul>
+        </div>
+
+        <!-- COMPANY COLUMN (कंपनी के links) -->
+        <div class="footer-links">
+          <h4>Company</h4> <!-- 🔧 Column heading -->
+          <ul>
+            <!-- 🔧 Company related links यहां हैं -->
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- LEGAL COLUMN (कानूनी पेज links) -->
+        <div class="footer-links">
+          <h4>Legal</h4> <!-- 🔧 Column heading -->
+          <ul>
+            <!-- 🔧 Legal pages के links -->
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT (कॉपीराइट नोटिस) -->
+      <div class="footer-bottom">
+        <!-- 🔧 Copyright text और year बदलें -->
+        <p>&copy; 2026 Creatik Designs. All rights reserved. Made with purpose.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA for Mobile -->
+  <div class="sticky-cta">
+    <a href="products.html" class="btn btn-primary" style="width: 100%;">
+      Explore Products
+      <span class="arrow">→</span>
+    </a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

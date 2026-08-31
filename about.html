@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Creatik Designs</title>
+  <meta name="description" content="Learn about Creatik Designs and our approach to creating thoughtful digital products.">
+  <link rel="canonical" href="https://creatikdesigns.com/about.html">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <!-- ===============================================
+       NAVBAR (ऊपर का मेनू)
+
+       ⚠️ CROSS-REFERENCE - YE NAVBAR SAARI FILES ME SAME HAI:
+       index.html, products.html, support.html, icon-packs.html, miniblue.html
+
+       AGAR MENU BADLA TO INME SE HAR EK ME BADLE.
+
+       🔧 WHAT TO CHANGE:
+       - Menu links (Home, Products, etc.)
+       - Brand name/logo
+
+       ⚠️ DON'T CHANGE:
+       - Structure/classes
+       =============================================== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-mark">C</div>
+        Creatik Designs
+      </a>
+      <ul class="navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="icon-packs.html">Icon Packs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="icon sun-icon">☀️</span>
+          <span class="icon moon-icon">🌙</span>
+        </button>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Open menu">
+          <div class="menu-icon"><span></span><span></span><span></span></div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <!-- ⚠️ CROSS-REFERENCE - Mobile menu saari files me same -->
+  <div id="mobile-overlay" class="mobile-overlay"></div>
+  <div id="mobile-menu" class="mobile-menu">
+    <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <ul class="mobile-menu-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="icon-packs.html">Icon Packs</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </div>
+
+  <!-- Header -->
+  <section class="hero" style="min-height: 60vh; padding-top: 80px;">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="badge badge-primary" style="margin-bottom: var(--space-lg);">About Us</span>
+        <h1 style="margin-bottom: var(--space-md);">Small details. Bigger experiences.</h1>
+        <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto;">
+          Creatik Designs focuses on creating digital products where design has purpose, interfaces stay understandable, details matter, and quality comes before unnecessary complexity.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Approach -->
+  <section class="reveal" style="background: var(--gradient-mesh); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Philosophy</span>
+        <h2 class="section-title">How we think about design</h2>
+        <p class="section-description">Four principles that guide everything we build.</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-xl);">
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-md);">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(59, 130, 246, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.25rem;">1</div>
+            <div>
+              <h3 style="margin-bottom: var(--space-sm);">Design with intent</h3>
+              <p style="color: var(--text-secondary); line-height: 1.8;">
+                Every element in our products exists for a reason. We avoid adding features or visual details just because we can. Instead, we focus on what actually improves the experience.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-md);">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(139, 92, 246, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.25rem;">2</div>
+            <div>
+              <h3 style="margin-bottom: var(--space-sm);">Stay understandable</h3>
+              <p style="color: var(--text-secondary); line-height: 1.8;">
+                Good design shouldn't require a manual. We aim to create interfaces and experiences that feel intuitive, where the next step is always clear without being obvious.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-md);">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(6, 182, 212, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.25rem;">3</div>
+            <div>
+              <h3 style="margin-bottom: var(--space-sm);">Sweat the details</h3>
+              <p style="color: var(--text-secondary); line-height: 1.8;">
+                The difference between good and great often lives in the details most people won't consciously notice but everyone will feel. We care about those details.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding: var(--space-lg);">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-md);">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(249, 115, 22, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.25rem;">4</div>
+            <div>
+              <h3 style="margin-bottom: var(--space-sm);">Build useful things</h3>
+              <p style="color: var(--text-secondary); line-height: 1.8;">
+                We're not interested in creating products that look impressive but don't solve real problems. Our focus is on building things people actually want to use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Build -->
+  <section class="reveal" style="background: var(--gradient-mesh); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Focus</span>
+        <h2 class="section-title">What we build</h2>
+        <p class="section-description">Three areas of focus where we apply our design philosophy.</p>
+      </div>
+
+      <div class="grid grid-3 reveal-stagger">
+        <div class="card" style="padding: var(--space-xl); text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: var(--space-md);">📱</div>
+          <h3 style="margin-bottom: var(--space-sm);">Android Apps</h3>
+          <p style="color: var(--text-secondary);">Focused applications designed around specific use cases and thoughtful interactions.</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-xl); text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: var(--space-md);">⚡</div>
+          <h3 style="margin-bottom: var(--space-sm);">Software & Tools</h3>
+          <p style="color: var(--text-secondary);">Practical digital tools that solve real problems without unnecessary complexity.</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-xl); text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: var(--space-md);">🎨</div>
+          <h3 style="margin-bottom: var(--space-sm);">Icon Packs</h3>
+          <p style="color: var(--text-secondary);">Carefully crafted icon systems that bring consistency and personality to Android.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Guiding Principles</span>
+        <h2 class="section-title">What guides us</h2>
+        <p class="section-description">The values that shape every decision we make.</p>
+      </div>
+
+      <div class="grid grid-3 reveal-stagger">
+        <div class="card" style="padding: var(--space-xl); text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: var(--space-md);">💎</div>
+          <h3 style="margin-bottom: var(--space-sm);">Quality over quantity</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9375rem;">We'd rather ship one great product than ten mediocre ones.</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-xl); text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: var(--space-md);">🔧</div>
+          <h3 style="margin-bottom: var(--space-sm);">Function over flash</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9375rem;">Visual appeal matters, but it should never compromise usability.</p>
+        </div>
+
+        <div class="card" style="padding: var(--space-xl); text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: var(--space-md);">🌱</div>
+          <h3 style="margin-bottom: var(--space-sm);">Continuous improvement</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9375rem;">Launching is just the beginning. We keep refining based on real use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="reveal" style="background: var(--gradient-mesh); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container text-center">
+      <div class="card" style="padding: var(--space-4xl); max-width: 700px; margin: 0 auto; background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.1));">
+        <div style="font-size: 3rem; margin-bottom: var(--space-lg);">👋</div>
+        <h2 style="margin-bottom: var(--space-md);">Want to get in touch?</h2>
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-xl);">
+          Have questions, feedback, or just want to say hello? We'd love to hear from you.
+        </p>
+        <a href="support.html" class="btn btn-primary magnetic">
+          Contact Us
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- ⚠️ CROSS-REFERENCE - FOOTER SAARI FILES ME SAME HAI -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>
+            <div class="logo-mark" style="width: 32px; height: 32px; font-size: 1rem;">C</div>
+            Creatik Designs
+          </h3>
+          <p>Digital products, designed with intent.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="icon-packs.html">Icon Packs</a></li>
+            <li><a href="miniblue.html">MiniBlue</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Creatik Designs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

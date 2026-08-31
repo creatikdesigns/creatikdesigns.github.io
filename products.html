@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — Creatik Designs</title>
+  <meta name="description" content="Explore our collection of digital products including Android apps, icon packs, and software.">
+  <link rel="canonical" href="https://creatikdesigns.com/products.html">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='55' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <!-- ===============================================
+       NAVBAR (ऊपर का मेनू)
+
+       ⚠️ CROSS-REFERENCE - YE NAVBAR SAARI FILES ME SAME HAI:
+       index.html, about.html, support.html, icon-packs.html, miniblue.html
+
+       AGAR MENU BADLA TO INME SE HAR EK ME BADLE.
+
+       🔧 WHAT TO CHANGE:
+       - Menu link text (Home, Products, Icon Packs, About, Support)
+       - Brand name/logo
+       - Active page highlight
+
+       ⚠️ DON'T CHANGE:
+       - Navbar structure/classes
+       =============================================== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-mark">C</div>
+        Creatik Designs
+      </a>
+      <ul class="navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="icon-packs.html">Icon Packs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="icon sun-icon">☀️</span>
+          <span class="icon moon-icon">🌙</span>
+        </button>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Open menu">
+          <div class="menu-icon"><span></span><span></span><span></span></div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <!-- ⚠️ CROSS-REFERENCE - YE MOBILE MENU BHI SAARI FILES ME HAI -->
+  <div id="mobile-overlay" class="mobile-overlay"></div>
+  <div id="mobile-menu" class="mobile-menu">
+    <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <ul class="mobile-menu-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="icon-packs.html">Icon Packs</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Header -->
+  <section class="hero" style="min-height: 60vh; padding-top: 80px;">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="badge badge-primary" style="margin-bottom: var(--space-lg);">Our Products</span>
+        <h1 style="margin-bottom: var(--space-md);">
+          <span class="gradient-text">Digital Products</span>
+        </h1>
+        <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto;">
+          Carefully crafted digital experiences for Android and beyond. Each product is built with attention to detail and a focus on user experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="reveal">
+    <div class="container">
+      <div class="grid grid-2 reveal-stagger">
+
+        <!-- MiniBlue Product Card -->
+        <article class="card product-card category-card" style="padding: var(--space-xl);">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
+            <div style="width: 80px; height: 80px; border-radius: var(--radius-xl); background: linear-gradient(135deg, #1e3a8a, #3b82f6, #06b6d4); display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;">
+              🔵
+            </div>
+            <div style="flex: 1;">
+              <h3 style="margin-bottom: var(--space-xs);">MiniBlue</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: var(--space-md);">Icon Pack for Android</p>
+              <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
+                A minimal blue icon pack with 1550+ carefully crafted icons designed for a clean and consistent Android setup.
+              </p>
+              <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-lg);">
+                <span class="badge badge-primary">1550+ Icons</span>
+                <span class="badge">Adaptive Icons</span>
+                <span class="badge">Regular Updates</span>
+              </div>
+              <a href="miniblue.html" class="btn btn-primary magnetic" style="width: fit-content;">
+                View Details
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Placeholder for future products -->
+        <article class="card product-card category-card" style="padding: var(--space-xl);">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
+            <div style="width: 80px; height: 80px; border-radius: var(--radius-xl); background: linear-gradient(135deg, #581c87, #8b5cf6, #06b6d4); display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;">
+              🔮
+            </div>
+            <div style="flex: 1;">
+              <h3 style="margin-bottom: var(--space-xs);">Coming Soon</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: var(--space-md);">Android App</p>
+              <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
+                A new utility app is in development. Sign up for our newsletter to be the first to know when it launches.
+              </p>
+              <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-lg);">
+                <span class="badge">In Development</span>
+                <span class="badge">Beta Access</span>
+              </div>
+              <!-- 🔧 EMAIL COPY BUTTON - data-copy me email daalne ke liye -->
+              <!-- ⚠️ YE EMAIL SAHI JAGAH HAI: support.html line 110 -->
+              <!-- ⚠️ AGAR EMAIL BADLA TO SAARI JAGAH BADLE: -->
+              <!--    - products.html line 120 (yeh line) -->
+              <!--    - QUICK-CHANGE-GUIDE.md -->
+              <a href="#" class="btn btn-secondary magnetic" style="width: fit-content;" data-copy="notify@creatikdesigns.com">
+                Get Notified
+                <span class="arrow">📧</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Placeholder for future products -->
+        <article class="card product-card category-card" style="padding: var(--space-xl);">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
+            <div style="width: 80px; height: 80px; border-radius: var(--radius-xl); background: linear-gradient(135deg, #0f766e, #14b8a6, #06b6d4); display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;">
+              🎨
+            </div>
+            <div style="flex: 1;">
+              <h3 style="margin-bottom: var(--space-xs);">Coming Soon</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: var(--space-md);">Icon Pack</p>
+              <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
+                A new themed icon pack is being designed. Join our community to influence the direction and get early access.
+              </p>
+              <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-lg);">
+                <span class="badge">In Design</span>
+                <span class="badge">Community Input</span>
+              </div>
+              <a href="icon-packs.html" class="btn btn-secondary magnetic" style="width: fit-content;">
+                View Icon Packs
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Placeholder for future products -->
+        <article class="card product-card category-card" style="padding: var(--space-xl);">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
+            <div style="width: 80px; height: 80px; border-radius: var(--radius-xl); background: linear-gradient(135deg, #7c3aed, #a855f7, #d946ef); display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;">
+              ⚡
+            </div>
+            <div style="flex: 1;">
+              <h3 style="margin-bottom: var(--space-xs);">Coming Soon</h3>
+              <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: var(--space-md);">Developer Tool</p>
+              <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">
+                A productivity tool for developers is in the works. Built to streamline workflows and improve efficiency.
+              </p>
+              <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-lg);">
+                <span class="badge">Planning Phase</span>
+                <span class="badge">Open Source</span>
+              </div>
+              <a href="#" class="btn btn-secondary magnetic" style="width: fit-content;" data-copy="dev@creatikdesigns.com">
+                Join Waitlist
+                <span class="arrow">⏳</span>
+              </a>
+              <!-- 🔧 DEVELOPER EMAIL -->
+              <!-- ⚠️ YE EMAIL AUR JAGAH BHI HAI: support.html -->
+              <!-- ⚠️ AGAR EMAIL BADLA TO SAARI JAGAH BADLE -->
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="reveal" style="background: var(--gradient-mesh); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Categories</span>
+        <h2 class="section-title">Explore by Category</h2>
+        <p class="section-description">Find what you're looking for across our product lines.</p>
+      </div>
+
+      <div class="grid grid-3 reveal-stagger">
+        <a href="icon-packs.html" class="card category-card text-center" style="padding: var(--space-xl);">
+          <div style="font-size: 3rem; margin-bottom: var(--space-md);">🎨</div>
+          <h3 style="margin-bottom: var(--space-sm);">Icon Packs</h3>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">Beautiful, consistent icon packs for Android launchers</p>
+          <span class="btn btn-ghost magnetic" style="width: fit-content; margin: 0 auto;">Browse Icon Packs <span class="arrow">→</span></span>
+        </a>
+
+        <a href="#" class="card category-card text-center" style="padding: var(--space-xl);">
+          <div style="font-size: 3rem; margin-bottom: var(--space-md);">📱</div>
+          <h3 style="margin-bottom: var(--space-sm);">Android Apps</h3>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">Utility and productivity apps for Android</p>
+          <span class="btn btn-ghost magnetic" style="width: fit-content; margin: 0 auto;">Coming Soon <span class="arrow">→</span></span>
+        </a>
+
+        <a href="#" class="card category-card text-center" style="padding: var(--space-xl);">
+          <div style="font-size: 3rem; margin-bottom: var(--space-md);">🛠️</div>
+          <h3 style="margin-bottom: var(--space-sm);">Developer Tools</h3>
+          <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">Tools and utilities for developers and creators</p>
+          <span class="btn btn-ghost magnetic" style="width: fit-content; margin: 0 auto;">Coming Soon <span class="arrow">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <!-- ===============================================
+       NEWSLETTER SECTION (न्यूज़लेटर)
+
+       ⚠️ CROSS-REFERENCE - NEWSLETTER DIFFERENT HAI:
+       - index.html: Different newsletter (lines 502-571)
+       - products.html: YE (lines 214-230)
+       - icon-packs.html: Alag version
+       - miniblue.html: Alag version
+
+       Har page ka newsletter alag alag design/text hai.
+       Agar heading ya description badlana ho to bas is page me
+       badl do (other pages ke alag hain).
+
+       🔧 WHAT TO CHANGE:
+       - Emoji icon (📬)
+       - Heading text
+       - Description
+       - Form button text
+       - Privacy note
+       =============================================== -->
+  <section class="reveal">
+    <div class="container text-center">
+      <div class="card" style="padding: var(--space-4xl); max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.1));">
+        <div style="font-size: 3rem; margin-bottom: var(--space-lg);">📬</div>
+        <h2 style="margin-bottom: var(--space-md);">Stay Updated</h2>
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-xl); font-size: 1.125rem;">
+          Get notified about new products, updates, and exclusive early access.
+        </p>
+        <form style="display: flex; gap: var(--space-md); max-width: 400px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+          <input type="email" placeholder="Enter your email" class="btn btn-secondary" style="flex: 1; min-width: 250px; text-align: left; background: var(--surface); border-color: var(--border);">
+          <button type="submit" class="btn btn-primary magnetic">Subscribe <span class="arrow">→</span></button>
+        </form>
+        <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: var(--space-md);">No spam, unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- ===============================================
+       FOOTER (फुटर - सबसे नीचे)
+
+       ⚠️ CROSS-REFERENCE - FOOTER SAARI FILES ME SAME HAI!
+       - index.html: Same footer
+       - about.html: Same footer
+       - support.html: Same footer
+       - icon-packs.html: Same footer
+       - miniblue.html: Same footer
+
+       AGAR FOOTER BADLA TO INME SE HAR EK ME BADLE.
+
+       🔧 WHAT TO CHANGE:
+       - Brand name/description
+       - Footer links
+       - Copyright year
+
+       ⚠️ DON'T CHANGE:
+       - Grid structure
+       - CSS classes
+       =============================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>
+            <div class="logo-mark" style="width: 32px; height: 32px; font-size: 1rem;">C</div>
+            Creatik Designs
+          </h3>
+          <p>Digital products, designed with intent.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="icon-packs.html">Icon Packs</a></li>
+            <li><a href="miniblue.html">MiniBlue</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Creatik Designs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
