@@ -150,15 +150,12 @@ function initNavbar() {
 // Scroll Reveal Animations
 // ============================================
 function initScrollReveal() {
-  const reveals = document.querySelectorAll('.reveal, .reveal-stagger > *');
+  const reveals = document.querySelectorAll('.reveal');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
-
-        // Optional: unobserve after revealing
-        // observer.unobserve(entry.target);
       }
     });
   }, {
@@ -168,6 +165,28 @@ function initScrollReveal() {
 
   reveals.forEach(element => {
     observer.observe(element);
+  });
+
+  // Reveal .reveal-stagger containers and their children simultaneously
+  const staggerContainers = document.querySelectorAll('.reveal-stagger');
+
+  const staggerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        // Also reveal each direct child with staggered delay
+        entry.target.querySelectorAll(':scope > *').forEach(child => {
+          child.classList.add('active');
+        });
+      }
+    });
+  }, {
+    threshold: 0.05,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  staggerContainers.forEach(container => {
+    staggerObserver.observe(container);
   });
 }
 
