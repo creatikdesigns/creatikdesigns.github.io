@@ -9,6 +9,55 @@
   <link rel="stylesheet" href="assets/css/design-system.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='55' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+  <style>
+    /* Mobile responsive fixes for MiniBlue page */
+    .miniblue-two-col-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4xl);
+      align-items: center;
+    }
+
+    /* Mobile: Stack columns vertically */
+    @media (max-width: 768px) {
+      .miniblue-two-col-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+      }
+
+      /* Reset order on mobile so content flows naturally */
+      .miniblue-two-col-grid > * {
+        order: unset !important;
+      }
+    }
+
+    /* Ensure device mockups scale properly on mobile */
+    .device-mockup {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .device-mockup {
+        max-width: 260px;
+        margin: 0 auto;
+      }
+
+      /* Also handle inline max-width on phone mockups */
+      .miniblue-phone-mockup {
+        max-width: 240px !important;
+      }
+    }
+
+    /* Fix hero section on mobile */
+    @media (max-width: 768px) {
+      .hero {
+        min-height: auto !important;
+        padding-top: 120px !important;
+        padding-bottom: var(--space-3xl) !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -74,7 +123,7 @@
   <!-- Hero Section -->
   <section class="hero" style="min-height: 80vh; padding-top: 0;">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4xl); align-items: center;">
+      <div class="miniblue-two-col-grid">
         <div class="reveal">
           <span class="badge" style="margin-bottom: var(--space-lg); background: linear-gradient(135deg, #06b6d4, #3b82f6); color: white;">Cyan → Blue Gradient</span>
           <h1 style="margin-bottom: var(--space-md); line-height: 1.1;">
@@ -171,7 +220,7 @@
   <!-- Designed for Consistency -->
   <section class="reveal">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4xl); align-items: center;">
+      <div class="miniblue-two-col-grid">
         <div>
           <span class="section-label">Design System</span>
           <h2 style="margin: var(--space-md) 0;">Designed for consistency</h2>
@@ -216,7 +265,7 @@
   <!-- Built for Everyday Use -->
   <section class="reveal" style="background: var(--gradient-mesh); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4xl); align-items: center;">
+      <div class="miniblue-two-col-grid">
         <div style="order: 1;">
           <span class="section-label">Compatibility</span>
           <h2 style="margin: var(--space-md) 0;">Built for everyday use</h2>
